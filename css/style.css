@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.navigation{
+    font-family: var(--font1);
+    margin-top: 23px;
+    /* height: 74px; */
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-left{
+   display: flex;
+}
+
+.nav-left span{
+   font-size: 34px;
+    padding-top: 9px;
+}
+
+.nav-left ul {
+    display: flex;
+    align-items: center;
+    margin: 0 60px;
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+.nav-left ul li{
+    list-style: none;
+    font-family: var(--font2);
+    margin: 0 14px;
+    font-size: 22px;
+}
+
+.nav-left ul li a:hover{
+    color: var(--main-bg-color);
+    font-weight: bolder;
+}
+
+.nav-left ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+.content-left{
+    font-family: var(--font1);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 1;
+}
+
+.content-right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-right img{
+    height: 355px;
+    border: 2px solid black;
+    border-radius: 200px;
+}
+
+.content{
+    height: 100%;
+    /* background-color: rgb(211, 211, 247); */
+    display: flex;
+    margin-top: 32px;
+    padding: 9px;
+    position: relative;
+}
+
+.content::after{
+    content: "";
+    background-image: url(../img/11.svg);
+    width: 100%;
+    height: inherit;
+    opacity: 0.15;
+    position: absolute;
+    border-radius: 12px;
+}
+
+.font1{
+    font-family: var(--font1);
+}
+
+.font2{
+    font-family: var(--font2);
+}
+
+.home-articles{
+    /* height: 455px; */
+    /* background-color: rgb(227, 250, 250, 0.5); */
+    padding-top: 12px;
+    position: relative;
+}
+
+.year-box{
+    position: absolute;
+    width: 150px;
+    height: 100px;
+    /* background-color: red; */
+    right: 0px;
+    top: 80px;
+}
+
+.year-box div{
+    margin: 12px 0px;
+}
+
+.home-article{
+    display: flex;
+    padding: 12px;
+    margin-top: 25px;
+}
+.home-article img{
+    width: 350px;
+}
+
+.home-article-content{
+    align-self: center;
+    padding:25px;
+}
+
+.home-article-content a{
+    text-decoration: none;
+    color: var(--main-bg-color);
+    color: black;
+}
+
+/* .home-articles{} */
+.footer{
+    height: 50px;
+    background-color: var(--main-bg-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    flex-direction: column;
+}
+
+.footer a{
+    color: white;
+}
